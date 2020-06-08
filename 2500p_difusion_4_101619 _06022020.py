@@ -37,7 +37,7 @@ import numpy as np
 ############################################ end system set up ######################################################
 
 ############################################# sysytem parameters ####################################################
-iter_nums = 200001 # number of moves or reactions to be performed 
+iter_nums = 2000001 # number of moves or reactions to be performed 
 nuc_size = 5 # off nucleus size + 1 
 temp = 323.15 # temperature in kelvin, K
 k_b = 1.38064852e-23 # boltzman constant in J/K
@@ -4831,8 +4831,8 @@ pylab.plot(time_dynamics, pre_off_nuclei_dynamics,'c', label = 'pre_nucl._off_pa
 pylab.plot(time_dynamics, off_nuclei_dynamics,'g', label = 'off_pathway_nuclei')
 pylab.xlabel('$Time\ (h)$', fontsize = 14)
 pylab.ylabel(r'$N$', fontsize = 14)
-pylab.ylimit([0.1,1600])
-pylab.yscale('log')
+#pylab.ylim([0.1,1600])
+#pylab.yscale('log')
 pylab.title(str(N)+ ' ' +'particles' +','+ ' '+ str(iter_nums)+' '+'runs',  fontsize = 14)
 pylab.legend(loc= 'upper right')
 pylab.savefig('off_trial2.png')
