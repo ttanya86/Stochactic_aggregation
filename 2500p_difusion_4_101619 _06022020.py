@@ -4537,7 +4537,7 @@ for th in range(iter_nums):
         secondFibrilDetach = random.choice(second_fibril_detach)
         detatch_second(L,sigma,secondFibrilDetach,second_fibril_association,second_fibril_dissociation,
            pentamer_on_diffusion,fibril_dissociation,fibril_association,
-           second_monomer_attach,STOP_TEST)
+           second_monomer_attach,second_fibril_detach,STOP_TEST)
     elif action[j-1] == 'monomer_diffusion':                
         monoDiffuse = random.choice(monomers)  
 #        print("diffusing a mono")
