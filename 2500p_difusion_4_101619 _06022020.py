@@ -11,7 +11,7 @@ import numpy as np
 ########################################## system set up ##################################################
 
 ## The system consists of particles modeled as disks with a certain radius and can not overlap (hard core repulsion),\
-## and implicit solvent given trough diffusion and charge on particles, aka electrostatic interactions between particles
+## and implicit solvent given trough diffusion 
 ## L is a list of lists!! each particle is a list with x-coordinate, y-coordinate, particle ID, slope ID
 ## temperature enters through Arrehnius like reaction rates for each type of possible reaction
 ## ionic strength  and viscosity of solvent via Debye length giving the interaction length at each salt concentration
