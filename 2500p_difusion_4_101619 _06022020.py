@@ -3788,7 +3788,7 @@ def detatch_second(VV,sigma,o, otrans_diff_length, second_fibril_association14,s
     #                break
                     return (VV)
                 elif osk1[2] in [31,32,33]:
-                    otmp_fibril_dissociation14.append(osk1)
+                    otmp_fibril_dissociation14.append(o[on_count])
                     if( VV[ojb1][2] == 0) and (otest_dist_detach >= round(2.0*sigma,13)) and (otest_dist_detach <= round(3.5*sigma,13)):
                         otmp_fibril_association14.append([ojb1,o[on_count]])
                 elif (osk1[2] == 30) and (VV[ojb1][2] == 0) and (otest_dist_detach >= round(2.0*sigma,13))  and (otest_dist_detach <= round(3.5*sigma,13)):
